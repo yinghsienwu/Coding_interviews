@@ -1,0 +1,14 @@
+# Depth-First, post-order traversal
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.children = None
+
+    def add_child(self, grandchild):
+        self.children.append(grandchild)
+
+class Tree:
+    def __init__(self, root=None):
+        self.root = root
+
